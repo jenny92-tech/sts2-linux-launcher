@@ -1,0 +1,25 @@
+# ── 游戏版权依赖(从游戏目录拷贝,见 README) ────────────────
+# MegaCrit 的游戏程序集 —— 编译时引用,绝不提交
+refs/sts2.dll
+refs/0Harmony.dll
+refs/GodotSharp.dll
+# 游戏原版 shader(对照参考,从 pck 抽取,绝不提交)
+shaders/game_original/
+
+# ── 编译产物 ──────────────────────────────────────────────
+obj/
+bin/
+linux/build/
+
+# ── 杂项 ──────────────────────────────────────────────────
+*.user
+.DS_Store
+.claude/
+dist/
+tools/godot_pck/bin/
+
+# external/ 编译产物不随仓库分发(版权/体积) — 按各子目录 README 自行编译
+external/**/*.so
+external/**/*.so.*
+external/**/*.dll
+external/**/*.mono

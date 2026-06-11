@@ -1,0 +1,16 @@
+<!--
+  Set $(CompatReferenceDir) to the folder containing the game's shipped
+  0Harmony.dll, GodotSharp.dll, sts2.dll. Default is the refs/ folder
+  one level up — populate it via:
+
+    scp root@<device>:/mnt/.../data_sts2_linuxbsd_arm64/{0Harmony,GodotSharp,sts2}.dll \
+        pocs/sts2-linux-launcher/refs/
+
+  Override on the command line:
+    dotnet build -p:CompatReferenceDir=/some/other/path
+-->
+<Project>
+  <PropertyGroup>
+    <CompatReferenceDir Condition="'$(CompatReferenceDir)' == ''">$(MSBuildThisFileDirectory)../../refs</CompatReferenceDir>
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,79 @@
+STS2 Linux Launcher — License
+
+Copyright (c) 2026 jenny92-tech <jennyliu90223@gmail.com>
+
+The contents of this repository are licensed under
+
+  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+  (CC BY-NC-SA 4.0)
+
+You are free to:
+
+  - Share — copy and redistribute the material in any medium or format
+  - Adapt — remix, transform, and build upon the material
+
+Under the following terms:
+
+  - Attribution. You must give appropriate credit to
+      jenny92-tech / sts2-linux-launcher
+      https://github.com/jenny92-tech/sts2-linux-launcher
+    and to the Android port whose Harmony-patcher approach this project
+    builds on:
+      ModinMobileSTS / Sts2MobileLauncher
+      https://github.com/ModinMobileSTS/Sts2MobileLauncher
+    Credit must be visible in any derivative work or distribution
+    (README, About screen, splash credits, or equivalent).
+
+  - NonCommercial. You may not use the material for commercial purposes.
+    "Commercial purposes" include, but are not limited to: selling the
+    software, including it in a paid product or service, charging for
+    access, bundling with a commercial game distribution, or monetising
+    via advertising tied to its functionality.
+
+  - ShareAlike. If you remix, transform, or build upon the material, you
+    must distribute your contributions under the same license
+    (CC BY-NC-SA 4.0) or a compatible license.
+
+  - No additional restrictions. You may not apply legal terms or
+    technological measures that legally restrict others from doing
+    anything the license permits.
+
+Notices:
+
+  - The full legal text of CC BY-NC-SA 4.0 lives at
+    https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+
+  - This license attaches only to original code, assets, build scripts,
+    and documentation contributed to this repository by jenny92-tech
+    (and any future contributors who choose to license under the same
+    terms). Third-party components included in external/ and tools/
+    retain their own respective licenses (Apache 2.0, MIT, SIL OFL 1.1,
+    Esoteric Software EULA, FMOD EULA, etc.); see the README under each
+    directory.
+
+────────────────────────────────────────────────────────────────────────
+
+IMPORTANT SEPARATE NOTICE — Game files are NOT covered
+
+This license grants NO rights whatsoever to the underlying game
+"Slay the Spire 2" or to any of its code, assemblies, art assets, audio
+data, fonts, scripts, configuration, or compiled resource packs.
+"Slay the Spire 2" is © MegaCrit Inc. and is not affiliated with this
+project.
+
+To use this launcher you must own a legal copy of "Slay the Spire 2"
+purchased through an authorised storefront. The launcher reads files
+from a user-supplied copy at runtime; it does not contain, embed, or
+distribute any MegaCrit material.
+
+Redistribution of MegaCrit game files — including but not limited to
+sts2.dll, sts2.deps.json, SlayTheSpire2.pck, any of the third-party
+.NET dependencies the game ships in data_sts2_windows_x86_64/, FMOD
+bank archives, Spine skeleton data, or any modified versions of the
+above — is NOT authorised by this license and is likely to infringe
+MegaCrit's copyright. Any such redistribution is the sole
+responsibility of the redistributor.
+
+Distributing builds of this launcher that include MegaCrit game files
+in any form constitutes malicious or infringing distribution and is
+explicitly prohibited.

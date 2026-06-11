@@ -1,0 +1,43 @@
+<!--
+  sts2_compat.dll — Harmony patcher for the StS2 Linux handheld port.
+
+  No *.deps.json / *.runtimeconfig.json so hostfxr resolves us into the
+  game's GodotSharp instance (separate ALC → null NativeFuncs → SEGV).
+
+  Build: dotnet build -c Release
+  Output: linux/build/sts2_compat.dll
+-->
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+
+    <RootNamespace>STS2LinuxLauncher</RootNamespace>
+    <AssemblyName>sts2_compat</AssemblyName>
+
+    <OutDir>$(MSBuildThisFileDirectory)../../linux/build/</OutDir>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
+    <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+    <GenerateDependencyFile>false</GenerateDependencyFile>
+    <GenerateRuntimeConfigurationFiles>false</GenerateRuntimeConfigurationFiles>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath>$(CompatReferenceDir)/0Harmony.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="sts2">
+      <HintPath>$(CompatReferenceDir)/sts2.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <!-- INTENTIONALLY NO GodotSharp reference: would load a second
+         GodotSharp instance, NativeFuncs all null → SEGV on first call.
+         All Godot interop is via reflection (Harmony __instance/__result). -->
+  </ItemGroup>
+
+</Project>
